@@ -29,7 +29,7 @@ author: Patric A.B
 avatar: assets/images/microchip-solid.png
 
 # You'll want to customize url and baseurl for your own site:
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "patricab.github.io" # the base hostname & protocol for your site
 
 # Social settings
