@@ -49,6 +49,7 @@ collections: [sections]
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Default frontmatter
 defaults:
