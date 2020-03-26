@@ -2,7 +2,7 @@
 title: Archive
 layout: page
 order: 1
-icon: fa-archive
+icon: fa-bars
 ---
 
 <ul>
