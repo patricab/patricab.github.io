@@ -23,10 +23,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Between a rock and a hard Space
-subtitle: The blog of a mildly irritated Electrical Engineering student
+tagline: The blog of a mildly irritated Electrical Engineering student
 description: >- # this means to ignore newlines until "baseurl:"
 author: Patric A.B
-avatar: assets/images/microchip-solid.png
+logo: assets/images/microchip-solid.png
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -50,6 +50,7 @@ collections: [sections]
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Default frontmatter
 defaults:

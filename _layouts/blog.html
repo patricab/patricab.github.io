@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<head>
+    {% seo %}
+</head>
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 {%- include header.html scrolly_nav=_posts -%}
 <!-- Main -->
