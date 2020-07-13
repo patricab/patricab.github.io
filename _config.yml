@@ -1,56 +1,58 @@
-# They activate the theme and tell Jekyll to find your homepage content
-# in /_sections. Note where "sections" starts with an underscore
-# and where it doesn't. The social settings will make links to
-# Twitter, etc., but only if you give the URL.
-#
-# Also, be sure to customize url and baseurl for your site.
-#
-# ---------------------------------------------------------------
-#
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://patricab.github.io"
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# THEME-SPECIFIC CONFIGURATION
 title: Between a rock and a hard Space
-tagline: The blog of a mildly irritated Electrical Engineering student
-description: >- # this means to ignore newlines until "baseurl:"
-author: Patric A.B
-logo: assets/images/microchip-solid.png
+description: "The blog of a mildly irritated Electrical Engineering student"      # used by search engines
+avatar: assets/img/microchip_black.png                         # Empty for no avatar in navbar
+favicon: assets/img/microchip_black.png                             # Icon displayed in the tab
 
-# You'll want to customize url and baseurl for your own site:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://patricab.github.io" # the base hostname & protocol for your site
+# Header and footer text
+header_text: The blog of a mildly irritated Electrical Engineering student
+header_feature_image: assets/img/pexels/circuit-2.jpeg
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
-# Social settings
-# Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
-github_url: https://github.com/patricab
-linkedin_url: https://www.linkedin.com/in/patric-andre-berthelsen/
-rss_url: feed.xml 
-# twitter_url:
+# Blog
+excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
+post_navigation: true
+color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
-# Google Analytics Tracking ID goes here:
-# google_analytics:
+# Features
+# katex: true                                             # Enable if using math markup
+google_analytics:                                       # Tracking ID, e.g. "UA-000000-01"
+# cookie_consent: false                                   # To respect the usage of cookies
+# cookie_consent_disclaimer: We would like to use third party cookies and scripts to improve the functionality of this website.
+disqus_shortname:                                       # Your discus shortname for comments
+layout_variables:                                       # Open the "_sass > base" folder, and open "_variables.scss"
+footer_icons:                                           # In _data/social.yml
+share_buttons:                                          # In _data/social.yml
+authors: Patric A.B                                               # In _data/authors.yml
+language:                                               # In _data/language.yml
 
-# The following settings are NECESSARY for the Prologue theme to run:
-remote_theme: chrisbobbe/jekyll-theme-prologue
-collections: [sections]
+# PAGINATION
+paginate: 5
+paginate_path: "/blog/page:num"
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+exclude: [".jekyll-cache", "Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", ".idea", "vendor/*", ".travis.yml",
+          "LICENSE", "README.md", "screenshot.png", "assets/package.json", "assets/node_modules", "assets/gulpfile.js"]
+
+# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
 
 # Default frontmatter
 defaults:
