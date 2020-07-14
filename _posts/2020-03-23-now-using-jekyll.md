@@ -1,7 +1,7 @@
 ---
 title: "I'm now using Jekyll!"
-categories: jekyll
 layout: post
+tags: jekyll
 ---
 
 So, as you've probably noticed, I'm not on Wordpress anymore.
