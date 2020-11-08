@@ -1,0 +1,12 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+BEGIN_EXPORT html
+---
+title: "Making my own Eurorack Synthesizer - Part 1"
+thumbnail: ""
+feature-img: ""
+categories: eurorack
+tags: eurorack, synth
+---
+#+END_EXPORT
+* 
