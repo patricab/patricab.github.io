@@ -1,0 +1,12 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+BEGIN_EXPORT html
+---
+title: "I got my HAM license!"
+thumbnail: ""
+feature-img: ""
+categories: ham
+tags: ham
+---
+#+END_EXPORT
+* 
