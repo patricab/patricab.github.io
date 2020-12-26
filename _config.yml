@@ -1,14 +1,20 @@
 title: Between a rock and a hard Space
 name: patricab
 user_description: The blog of a mildly irritated Electrical Engineering student
-# notes_url: "https://simply-jekyll.netlify.app"
+tagline: The blog of a mildly irritated Electrical Engineering student
 profile_pic: /assets/img/microchip_black.png
 avatar: /assets/img/microchip_black.png
 favicon: /assets/img/microchip_black.png
 copyright_name: Patric A. Berthelsen
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://simply-jekyll.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "patricab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
+
+social:
+  name: Patric A.B
+  links:
+    - https://www.linkedin.com/in/patric-andre-berthelsen/
+    - https://github.com/patricab
 
 # Build settings
 theme: null
@@ -33,7 +39,6 @@ collections:
     notes:
       output: true
       permalink: /notes/:title
-
 
 defaults:
   - scope:
